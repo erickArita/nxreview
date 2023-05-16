@@ -1,15 +1,18 @@
+import { Login } from 'lib/auth/src';
 import styled from 'styled-components';
 
-import NxWelcome from './nx-welcome';
 
-const StyledApp = styled.div`
-  // Your style here
-`;
+const StyledApp = styled.div``;
 
 export function App() {
+
+   const login = async (user: string, password: string) => {
+    acreedoresApi
+  };
+
   return (
     <StyledApp>
-      <NxWelcome title="nxreview" />
+      <Login onLogin={login} />
     </StyledApp>
   );
 }

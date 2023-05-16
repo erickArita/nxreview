@@ -1,0 +1,16 @@
+{
+  "name": "lib-domain",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "lib/domain/src",
+  "projectType": "library",
+  "tags": ["service:domain"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["lib/domain/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
